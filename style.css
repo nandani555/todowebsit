@@ -1,0 +1,104 @@
+/* Base & dark background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Container styling */
+.todo-container {
+  background: #111;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Title */
+.todo-container h1 {
+  text-align: center;
+  color: #0af;
+  margin-bottom: 1rem;
+}
+
+/* Form */
+#formtodo {
+  display: flex;
+  gap: 0.5rem;
+}
+#formtodo input {
+  flex: 1;
+  padding: 0.5rem;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+}
+#formtodo input:focus {
+  outline: 2px solid #0af;
+}
+#formtodo button {
+  padding: 0 1rem;
+  background: #0af;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#formtodo button:hover {
+  background: #08c;
+}
+
+/* List */
+#todo-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  background: #222;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.todo-item span {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Buttons inside each item */
+.todo-item button {
+  margin-left: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn {
+  background: #e53;
+  color: #fff;
+}
+.delete-btn:hover {
+  background: #c42;
+}
+.mark-btn {
+  background: #4a8;
+  color: #fff;
+}
+.mark-btn:hover {
+  background: #387;
+}
+
